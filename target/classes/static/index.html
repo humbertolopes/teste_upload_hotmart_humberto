@@ -1,0 +1,73 @@
+<html ng-app="uploadApp">
+<head>
+<meta charset="utf8" />
+<title>Document Upload</title>
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body ng-controller="docController">
+	<div class="container">
+		
+		
+		<div class="row">
+		
+			<div style="height: 70px; background-color: #053d4e;margin-top: 1%;" >
+				<div style="width: 30%;float: left">
+					<img style="width: 20%;" src="imagens/logo-hotmart.png"/>
+				</div>
+				<div style="width: 60%;float: left;">
+					<h2 style="color: white;font-weight: bold;">Gerenciador de Arquivos</h2>
+				</div>
+				
+			</div>
+            
+            <table class="table table-bordered">
+            
+            	<tr>
+            		<td>
+            			Identificação do Usuário:
+            			<input type="text" ng-model="identificadorUsuario">
+            		</td>
+            		
+            		<td>
+                    	<input type="file" class="custom-file-input" file-model="file">
+                    </td>
+                    
+                     <td style="text-align: center;">
+                    	<button style="background-color: #f04e23;border-color: #d2370e;color: #fff; font-weight: 700;"ng-click="upload()">Upload</button>
+                    </td>
+            	</tr>
+            	
+                
+            </table>
+            
+        </div>
+        
+            <div class="row">
+		        <table class="table table-bordered">
+			<thead>
+    			<tr>
+    				<th>Nome do Arquivo</th>
+    				<th>Identificador Usuário</th>
+    				<th style="width: 10%;text-align: center;">Ações</th>
+    			</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="doc in docList">
+					<td><a href="{{doc.linkParaDownload}}">{{doc.nomeArquivo}}</a></td>
+					<td><a>{{doc.identificadorUsuario}}</a></td>
+					<td style="text-align: center;"><a href="{{doc.linkParaDownload}}" target="_blank">
+						<img style="width: 30%;" src="imagens/download.ico"/>
+					</a></td>
+				</tr>
+			</tbody>		
+		</table>
+		</div>
+	</div>
+    </div>
+    <script src="lib/plugin/jquery-2.2.1.min.js"></script>
+	<script src="lib/plugin/bootstrap.min.js"></script>
+	<script src="lib/plugin/angular.min.js"></script>
+	<script src="documentService.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
