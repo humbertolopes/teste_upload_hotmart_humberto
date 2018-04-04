@@ -4,12 +4,12 @@ Esse projeto se trata de uma aplicação web que realiza upload, listagem e down
 arquivos utilizando a linguagem de programação Java consumindo APIs REST.
 
 Para a aplicação utilizei as seguintes ferramentas e bibliotecas:
--SpringBoot
--Maven
--Angular
--JUnit
--Postman
--Swagger
+- SpringBoot
+- Maven
+- Angular
+- JUnit
+- Postman
+- Swagger
 
 Para facilitar a avaliação e os testes, coloquei no mesmo projeto da API REST o front-end de maneira que ao executar o projeto pelo eclípse a aplicação web que consumirá a API já poderá ser acessada pelo navegador assim como a documentação da API produzida utilizando Swagger. 
 Segue abaixo os endereços:
