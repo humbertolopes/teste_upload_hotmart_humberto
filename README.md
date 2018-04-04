@@ -1,6 +1,6 @@
 					Processo Seletivo - Desenvolvedor Back-End(UPLOAD)
 
-Essa projeto se trata de uma aplicação web que realize upload ​de arquivos, lista e realiza o download de todos os
+Esse projeto se trata de uma aplicação web que realiza upload ​de arquivos, listagem e o download dos
 arquivos enviados utilizando a linguagem de programação Java consumindo APIs REST.
 
 Para a aplicação utilizei as seguintes ferramentas e bibliotecas:
